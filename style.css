@@ -174,3 +174,69 @@ body {
 .book-cover img {
 	height: calc(28vh - 20px);
 }
+
+.bottom-section {
+	display: flex;
+	justify-content: start;
+}
+
+.airing-now {
+	--offset : 50px;
+	width: 50vw;
+	position: relative;
+	padding: 5px
+}
+
+.airing-now-book-cover div {
+	position: absolute;
+	height: 30vh;
+	width: 10vw;
+}
+
+.airing-now-book-cover img {
+	height: 30vh;
+	object-fit: contain;
+}
+
+#ab-cover-0 {
+	top: calc(0px + var(--offset));
+	left: calc(0px + var(--offset));
+	z-index: 0;
+	filter: blur(8px) opacity(50%);
+}
+
+#ab-cover-1 {
+	top: calc(20px + var(--offset));
+	left: calc(20px + var(--offset));
+	z-index: 1;
+	filter: blur(8px);
+}
+
+#ab-cover-2 {
+	top: calc(40px + var(--offset));
+	left: calc(40px + var(--offset));
+	z-index: 2;
+}
+
+.airing-now-content {
+	width: 35vw;
+	height: 45vh;
+	margin-left: calc(calc(var(--offset) + 40px) + 10vw);
+	overflow: hidden;
+}
+
+.airing-now-content h3 {
+	font-size: 1rem;
+	margin: 4px 2px;
+}
+
+.airing-now-content p {
+	font-size: 1rem;
+	text-align: justify;
+	margin: 0;
+}
+
+.upcoming {
+	width: 49vw;
+}
+
